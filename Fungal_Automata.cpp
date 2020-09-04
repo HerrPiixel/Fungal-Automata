@@ -3,6 +3,7 @@
 #include <vector>
 #include <string>
 #include "CAUniverse.h"
+#include "ImageCreator.h"
 
 int main()
 {
@@ -35,4 +36,23 @@ int main()
         }
         std::cout << "\n";
     }
+    
+    //testcode
+    /*
+    try
+    {
+        ImageCreator img = ImageCreator(3, 2, "Bild.ppm", true);
+        img.set(0,0,255, 0, 0);
+        img.set(1,0,0, 255, 0);
+        img.set(2,0,0, 0, 255);
+        img.set(0,1,255, 255, 0);
+        img.set(1,1,255, 255, 255);
+        img.set(2,1,0, 0, 0);
+        img.close();
+    }
+    catch (const std::exception& e)
+    {
+        std::cout << e.what();
+    }
+    */
 }
