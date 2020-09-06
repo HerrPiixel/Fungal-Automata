@@ -4,6 +4,7 @@
 #include <string>
 #include "CAUniverse.h"
 #include "ImageCreator.h"
+#include "CellularAutomata.h"
 
 int main()
 {
@@ -36,6 +37,27 @@ int main()
         }
         std::cout << "\n";
     }
+
+    //testcode 
+    /*
+    CellularAutomata ZA(length, rule);
+    ZA.setCell(9,1);
+    for (int k = 0; k < count; k++)
+    {
+        ZA.nextStep();
+        for (int l = 0; l < length; l++)
+        {
+            if (ZA.getCell_int(l) == 0) {
+                std::cout << " ";
+            }
+            else
+            {
+                std::cout << (char)219;
+            }
+        }
+        std::cout << "\n";
+    }
+    */
     
     //testcode
     /*
